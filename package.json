@@ -1,0 +1,56 @@
+{
+  "name": "dsh-agent-sync",
+  "version": "0.1.0",
+  "private": false,
+  "description": "让 DeepSeek Harness 与 Codex / WorkBuddy 实时共享对话与关键操作：互相看见对方在同一个实验里做了什么，避免重复改文件 / 重复跑命令，并可把某一方的活无缝接过来继续干",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js"
+  },
+  "files": [
+    "lib",
+    "skill",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test \"test/**/*.test.mjs\"",
+    "smoke": "node test/apply-smoke.mjs"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "codex",
+    "workbuddy",
+    "agent",
+    "multi-agent",
+    "sync",
+    "handoff",
+    "cordis"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dcdsnkj/dsh-agent-sync.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dcdsnkj/dsh-agent-sync/issues"
+  },
+  "homepage": "https://github.com/dcdsnkj/dsh-agent-sync#readme",
+  "license": "MIT",
+  "dependencies": {
+    "@deepseek-ai/schemastery": "^3.18.1"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/dsh-tools": ">=0.0.1-rc.1"
+  },
+  "peerDependenciesMeta": {
+    "@deepseek-ai/dsh-tools": {
+      "optional": true
+    }
+  },
+  "engines": {
+    "node": ">=22.15.0"
+  }
+}

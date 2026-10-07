@@ -1,0 +1,7 @@
+{"timestamp":"2026-01-02T04:00:00.000Z","type":"session_meta","payload":{"session_id":"66666666-7777-8888-9999-000000000000","cwd":"E:\\fixtures\\codex-corrupt"}}
+
+{ this is not json
+null
+{"timestamp":"2026-01-02T04:00:01.000Z","type":"response_item","payload":{"type":"message","id":"c-u1","role":"user","content":[{"type":"input_text","text":"坏行之后仍然要读到这条"}]}}
+{"timestamp":"2026-01-02T04:00:02.000Z","type":"response_item","payload":{"type":"message","id":"c-a1","role":"assistant","content":[{"type":"output_text","text":"这条是好行"}]}}
+{"timestamp":"2026-01-02T04:00:03.000Z","type":"response_item","payload":{"type":"message","id":"c-a2","role":"assistant","content":[{"type":"output_text","text":"这是一条被写坏的半行

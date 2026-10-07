@@ -1,0 +1,2 @@
+{"id":"w1","timestamp":1767000200000,"type":"message","role":"user","content":[{"type":"input_text","text":"<system-reminder data-role=\"user-context\">\nWorkspace Folder: E:\\fixtures\\ws-fallback\n</system-reminder>\n继续把文档整理好"}]}
+{"id":"w2","parentId":"w1","timestamp":1767000201000,"type":"message","role":"assistant","content":[{"type":"output_text","text":"收到。"}]}
