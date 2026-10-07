@@ -1,11 +1,19 @@
 # dsh-agent-sync
 
-让 **DeepSeek Harness (DSH)** 与 **Codex**、**WorkBuddy** 互相看见对方在同一个实验里做了什么。
+> 让 **DeepSeek Harness (DSH)** 与 **Codex**、**WorkBuddy** 互相看见对方在同一个实验里做了什么。
 
-三个 agent 在同一台机器、同一个工作目录里推进同一批实验时，最容易出的问题是：
+你在同时用好几个 coding agent 推进**同一批实验**时，真正的痛点不是"模型不够强"，
+而是**上下文困在另一个窗口里**。这个插件解决这件事：三方共用一条事件总线，
+彼此实时看见对方改了什么文件、跑了什么命令、得出什么结论，
+并且可以把其中一方的活**无缝接过来继续干**。
+
+三个 agent 在同一台机器、同一个工作目录里推进时，最容易出的问题是：
 重复改同一个文件、重复跑同一条命令、基于过期的假设继续往下做。
 这个插件把三方的**聊天记录 + 关键操作**汇到一条共享总线上，实时互相注入，并提供一个
 动手前的「防重复闸门」；每个聊天还能独立开关同步。
+
+> **这是 DSH 的树外插件**，走官方支持的扩展点安装，**不需要 fork 或修改 DSH 本体**。
+> 属于 DSH 生态的 `dsh-plugin`。
 
 ---
 
@@ -80,7 +88,7 @@ Codex 与 WorkBuddy 都是 Codex/Claude 系分支，但 JSONL 结构不同，所
 ## 安装
 
 ```powershell
-git clone https://github.com/dcdsnkj/dsh-agent-sync.git
+git clone https://github.com/dcsnkj/dsh-agent-sync.git
 ```
 
 1. **链接到 profile 的共享依赖目录**（desktop / web 都用这一个），把 `<PLUGIN_DIR>` 换成你的 clone 路径：

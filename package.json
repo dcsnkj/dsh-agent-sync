@@ -32,12 +32,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dcdsnkj/dsh-agent-sync.git"
+    "url": "git+https://github.com/dcsnkj/dsh-agent-sync.git"
   },
   "bugs": {
-    "url": "https://github.com/dcdsnkj/dsh-agent-sync/issues"
+    "url": "https://github.com/dcsnkj/dsh-agent-sync/issues"
   },
-  "homepage": "https://github.com/dcdsnkj/dsh-agent-sync#readme",
+  "homepage": "https://github.com/dcsnkj/dsh-agent-sync#readme",
   "license": "MIT",
   "dependencies": {
     "@deepseek-ai/schemastery": "^3.18.1"
